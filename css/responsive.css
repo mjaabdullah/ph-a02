@@ -41,4 +41,10 @@
         right: 0;
     }
     
+    /* podcast section */
+    .podcast-number {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 40px;
+    }
 }
