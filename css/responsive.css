@@ -47,4 +47,23 @@
         grid-template-rows: repeat(2, 1fr);
         row-gap: 40px;
     }
+
+    /* choose section */
+    .choose-section {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .choose-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+    .choose-items {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        padding: 40px 20px;
+    }
+    .choose-items [class^="item-"] {
+        grid-row: auto;
+        grid-column: auto;
+}
 }
