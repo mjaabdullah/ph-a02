@@ -106,4 +106,21 @@
         align-items: center;
         text-align: center;
     }
+
+    /* footer styles */
+    footer {
+        height: 248px;
+        background-size: cover;
+        background-position: center;
+    }
+    .footer-content {
+        gap: 18px;
+    }
+    .footer-content h1 {
+        font-size: 2rem;
+    }
+    .footer-content ul {
+        max-width: 260px;
+        gap: 18px;
+    }
 }
