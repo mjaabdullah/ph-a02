@@ -10,6 +10,12 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* css variables */
+:root {
+  --small-font-color: rgba(255, 255, 255, 0.6);
+}
+
 /* common styles */
 .flex {
   display: flex;
@@ -142,7 +148,7 @@ header button {
 .hero-text p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--small-font-color);
 }
 .hero-btn {
   gap: 8px;
@@ -171,7 +177,7 @@ header button {
 .podcast-text p {
   font-size: 1rem;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--small-font-color);
 }
 .podcast-number {
   width: 100%;
@@ -198,7 +204,7 @@ header button {
   font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--small-font-color);
 }
 
 
@@ -240,7 +246,7 @@ header button {
 }
 .choose-items p {
   line-height: 24px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--small-font-color);
 }
 .item-1 {
   grid-row: span 2;
@@ -250,12 +256,59 @@ header button {
 }
 .item-3 {
   grid-column: span 2;
-  background-color: #146903;
 }
 .item-4 {
   grid-column: span 2;
-  background-color: #a8032c;
 }
 .item-5 {
-  background-color: #835a02;
+  
+}
+
+/* feature section styles */
+.feature-section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.feature-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.feature-card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.feature-card iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 24px 24px 0 0;
+}
+.feature-card {
+  background-color: #250D44;
+  border-radius: 24px;
+  height: fit-content;
+}
+.feature-card .card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+.card-details h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card-details p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--small-font-color);
+}
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
