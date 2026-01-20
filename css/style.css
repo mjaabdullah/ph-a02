@@ -36,6 +36,25 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
+  animation: gradient 5s linear infinite ;
+}
+@keyframes gradient {
+  0% {
+    background: linear-gradient(0deg, #9100F8,#FB09B4,#F7E93F);
+  }
+  25% {
+    background: linear-gradient(90deg, #9100F8,#FB09B4,#F7E93F);
+  }
+  50% {
+    background: linear-gradient(180deg, #9100F8,#FB09B4,#F7E93F);
+  }
+  75% {
+    background: linear-gradient(270deg, #9100F8,#FB09B4,#F7E93F);
+  }
+  100% {
+    background: linear-gradient(360deg, #9100F8,#FB09B4,#F7E93F);
+  }
+
 }
 .btn-2 {
   width: fit-content;
@@ -50,11 +69,15 @@
   justify-content: center;
   align-items: center;
 }
+body [class^="btn-"]:hover {
+  cursor: pointer;
+}
 .logo span {
   background: linear-gradient(to bottom, #9100F8,#FB09B4,#F7E93F);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 /* body style */
 body {
   background-color: #1A0B2E;
@@ -83,8 +106,8 @@ header ul a {
   font-size: 1rem;
   font-weight: 500;
 }
-header button {
-
+header button:hover {
+  cursor: pointer;
 }
 
 .hamburger-menu {
@@ -123,7 +146,16 @@ header button {
   bottom: 0;
   margin: auto;
 }
+.circle {
+  animation: rotate 5s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
 
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .hero-image .new {
   position: absolute;
   top: 12px;
