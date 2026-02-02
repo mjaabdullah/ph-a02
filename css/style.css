@@ -36,26 +36,8 @@
   gap: 8px;
   justify-content: center;
   align-items: center;
-  animation: gradient 5s linear infinite ;
 }
-@keyframes gradient {
-  0% {
-    background: linear-gradient(0deg, #9100F8,#FB09B4,#F7E93F);
-  }
-  25% {
-    background: linear-gradient(90deg, #9100F8,#FB09B4,#F7E93F);
-  }
-  50% {
-    background: linear-gradient(180deg, #9100F8,#FB09B4,#F7E93F);
-  }
-  75% {
-    background: linear-gradient(270deg, #9100F8,#FB09B4,#F7E93F);
-  }
-  100% {
-    background: linear-gradient(360deg, #9100F8,#FB09B4,#F7E93F);
-  }
 
-}
 .btn-2 {
   width: fit-content;
   border: 1px solid #00FF88;
@@ -148,8 +130,6 @@ header button:hover {
 }
 .circle {
   animation: rotate 5s linear infinite;
-  transform-style: preserve-3d;
-  perspective: 800px;
 }
 
 @keyframes rotate {
@@ -162,6 +142,7 @@ header button:hover {
   right: 24px;
   font-size: 1rem;
   font-weight: 600;
+  text-align: center;
   padding: 8px 16px;
   background-color: #00FF88;
   color: #1A0B2E;
@@ -169,6 +150,14 @@ header button:hover {
   width: fit-content;
   text-transform: uppercase;
   z-index: 2;
+  animation: scale 2s ease-in-out infinite;
+}
+@keyframes scale {
+  0%, 100% { transform: scale(1); }
+  50% { 
+    transform: scale(1.1); 
+    color: #1A0202;
+  }
 }
 .hero-text {
   text-align: center;
@@ -293,9 +282,7 @@ header button:hover {
 .item-4 {
   grid-column: span 2;
 }
-.item-5 {
-  
-}
+
 
 /* feature section styles */
 .feature-section {

@@ -1,3 +1,6 @@
+
+
+
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
@@ -122,5 +125,53 @@
     .footer-content ul {
         max-width: 260px;
         gap: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero-image {
+        width: 180px;
+        height: 180px;
+    }
+    .hero-text h1 {
+        font-size: 2.75rem;
+    }
+    .hero-btn {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    .podcast-text {
+        padding: 20px;
+    }
+    .podcast-text h1 {
+        font-size: 2.5rem;
+        line-height: normal;
+    }
+    .podcast-number {
+        padding: 20px;
+    }
+    .podcast-number div {
+        gap: 8px;
+    }
+    .podcast-number h1 {
+        font-size: 1.6rem;
+    }
+    .podcast-number p {
+        font-size: 0.6rem;
+    }
+
+    .choose-items [class^="item-"] {
+        padding: 20px;
+        height: auto;
+    }
+
+    .feature-section {
+        padding: 20px;
+    }
+
+    .footer-content p {
+        max-width: 230px;
+        text-align: center;
     }
 }
